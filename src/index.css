@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-ayush-green: #45B755;
+  --color-ayush-green-dark: #389B46;
+  --color-ayush-green-light: #EBF7EC;
+  --color-ayush-orange: #F58637;
+  --color-ayush-orange-dark: #DC7128;
+  --color-ayush-brown: #B1752D;
+  --color-ayush-brown-light: #F8F1E7;
+  --color-ayush-lime: #94C120;
+  --color-ayush-dark: #433F3B;
+  --color-ayush-dark-muted: #6C6661;
+  --color-ayush-cream: #FCF1E2;
+  --color-ayush-cream-light: #FAF6EF;
+  --color-ayush-border: #E8DEC8;
+}
+
+body {
+  color: #433F3B;
+  background-color: #FAF6EF;
+}

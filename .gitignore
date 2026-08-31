@@ -1,0 +1,39 @@
+# Python Virtual Environment (CRITICAL)
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Vector Database / ChromaDB
+chroma_db/
+data/chroma_db/
+*.db
+*.sqlite
+
+# Node
+node_modules/
+
+# Build outputs
+build/
+dist/
+coverage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs & OS
+*.log
+.DS_Store
+
+# Test files (optional - you have many test-live files)
+test-live*.cjs
+test-*.cjs
+scratch/

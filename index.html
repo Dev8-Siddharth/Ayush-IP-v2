@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="/ayush-logo.jpg" />
+    <title>AyushIP Portal - National Ayush Mission</title>
+    <meta name="description" content="A multilingual, RAG-based AI assistant for Intellectual Property and regulatory guidance in Ayurveda, National Ayush Mission." />
+    <meta property="og:title" content="AyushIP Portal - National Ayush Mission" />
+    <meta property="og:description" content="A multilingual, RAG-based AI assistant for Intellectual Property and regulatory guidance in Ayurveda, National Ayush Mission." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <style>
+      vite-error-overlay {
+        display: none !important;
+      }
+    </style>
+    <script>
+      window.addEventListener('unhandledrejection', (event) => {
+        if (event.reason && event.reason.message && event.reason.message.includes('WebSocket closed without opened')) {
+          event.preventDefault();
+        }
+      });
+      const originalError = console.error;
+      console.error = (...args) => {
+        if (typeof args[0] === 'string' && args[0].includes('[vite] failed to connect to websocket')) {
+          return;
+        }
+        originalError.apply(console, args);
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
