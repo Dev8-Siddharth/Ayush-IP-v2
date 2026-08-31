@@ -19,7 +19,7 @@ const ai = new GoogleGenAI({
 
 async function startServer() {
   const app = express();
-  const PORT = Number(process.env.VITE_PORT || process.env.APP_PORT || 3000);
+  const PORT = Number(process.env.PORT || process.env.VITE_PORT || process.env.APP_PORT || 3000);
   const server = http.createServer(app);
 
   // WebSocket Server for Live API
